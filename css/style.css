@@ -22,8 +22,17 @@ span {
 .fs-16 {
     font-size: 16px !important;
 }
+.fs-18 {
+    font-size: 18px !important;
+}
+.fs-24 {
+    font-size: 24px !important;
+}
 .color-text-default {
     color: #3B3B3B;
+}
+.color-text-blue {
+    color: #1084E7;
 }
 .shop-info-general {
     height: 50px;
@@ -106,13 +115,22 @@ span {
 .menu {
     position: relative;
     display: inline-block;
+    background-color: white;
 }
 
 /* Ký hiệu '>' khi có menu con */
 .menu-item {
     position: relative;
 }
-
+.menu-item > .item-parent {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: #3B3B3B;
+    font-size: 15px;
+    &:hover {
+        color: #0056b3;
+    }
+}
 .menu-item .arrow {
     margin-left: 5px;
     font-weight: bold;
@@ -128,6 +146,7 @@ span {
     width: 300px;
     display: none;
     border: 1px solid white;
+    z-index: 20;
     
     /* Thêm hiệu ứng */
     opacity: 0;  /* Mặc định ẩn */
@@ -166,7 +185,86 @@ span {
     border-radius: 10px; /* Bo tròn góc cho ảnh */
 }
 
+.product-flash-sale {
+    background-image: linear-gradient(to right, #014ac7, #00a2ff);
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
 
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3B3B3B;
+}
 
+.card-text {
+    height: 40px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    color: #3B3B3B;
+}
 
+.price-amount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1084E7;
+}
 
+.old-amount {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.btn-add-card-wraper {
+    background-color: #FFB500;
+    border-radius: 5px;
+}
+
+.btn-add-card {
+    color: white;
+    &:hover {
+        background-color: #FFB500; 
+        color: white;
+    }
+}
+.product-flash-sale-item {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+}
+.discount-percent {
+    background-image: url('https://thucpham01.themeweb4s.com/templates/fashion02/assets/media/icon/bg-sale.png');
+    padding: 0 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px !important;
+    right: 0;
+    top: 25px;
+}
+
+.img-banner-wraper {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.img-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px; /* Bo tròn góc cho ảnh */
+    padding: 0;
+}
